@@ -12,8 +12,8 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Detect faces
 faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 
-count_faces = str(len(faces))
-print ("NUMBER OF FACES = " +count_faces)
+countfaces = str(len(faces))
+print ("NUMBER OF FACES = " +countfaces)
 
 # Draw rectangle around the faces
 for (x, y, w, h) in faces:
